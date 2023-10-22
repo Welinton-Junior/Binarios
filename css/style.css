@@ -1,0 +1,700 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.bodyLocal {
+    background-color: #0b3954;
+
+}
+
+.box1 {
+    background-color: #0b3954;
+    width: 100%;
+    height: 100vh;
+}
+
+.box3 {
+    background-color: #fffceb;
+    width: 100%;
+    height: auto;
+
+}
+
+.box2 {
+    background-image: url("../img/1088113.jpg");
+    display: flex;
+    justify-content: center;
+    min-height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.descricao {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 100px;
+    width: 100%;
+    animation: opacity 1s linear;
+}
+
+    .servicos {
+    color: black;
+    animation: opacity 1s linear;
+
+}
+
+.tituloBox1 {
+    color: white;
+    font-size: 50px;
+    animation: opacity 1s linear;
+    text-align: center;
+
+}
+
+.tituloBox2 {
+    color: white;
+    font-size: 50px;
+    animation: opacity 1s linear;
+
+}
+
+.solutions {
+    color: white;
+    text-align: center;
+    animation: opacity 1s linear;
+
+}
+
+form {
+    animation: opacity 1s linear;
+
+}
+
+.textoBox1 {
+    color: white;
+    animation: opacity 1s linear;
+    background-color: #548099;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.triangulo {
+    border-bottom: 250px solid #0b3954;
+    border-right: 250px solid #548099;
+    width: 0;
+    float: right;
+    font-size: 50px;
+}
+
+.logo {
+    animation: opacity 1s linear;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 2;
+    left: 93%;
+    top: 4%;
+}
+
+.logoNav {
+    margin-right: 10px;
+}
+
+.inputForm {
+    border-radius: 10px;
+    border: none;
+    padding-left: 5px;
+    width: 70%;
+}
+
+.textarea {
+    border-radius: 10px;
+
+}
+
+
+.titulo {
+    font-size: 50px;
+    animation: opacity 1s linear;
+
+}
+
+.boxFooter {
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+}
+
+.pt-15 {
+    padding-top: 220px;
+}
+
+.pt-7 {
+    padding-top: 20%;
+}
+
+.pt-10 {
+    padding-top: 20%;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.bolaImg {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    animation: opacity 1s linear;
+    border: 5px solid white;
+}
+
+
+.bola {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    animation: opacity 1s linear;
+}
+
+.btnContato {
+    background-color: white;
+    border: 0;
+    padding: 10px 3px 10px 3px;
+    border: 1px solid white;
+    animation: opacity 1s linear;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btnContato:hover {
+    background-color: #0b3954;
+    color: white;
+    transition: 1s;
+}
+
+
+
+.tituloBoxLocal {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    animation: opacity 1s linear;
+
+}
+
+.mapa {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: opacity 1s linear;
+
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+.retanguloBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.retangulo {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.retanguloCard {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #0b3954;
+    width: 20rem;
+    height: 15rem;
+    padding-bottom: 5rem;
+    cursor: pointer;
+    animation: opacity 1s linear;
+
+}
+
+.retanguloCard:hover {
+    background-color: white;
+    transition: 1s;
+}
+
+.retanguloCard:hover .tituloCard {
+    color: #0b3954;
+}
+
+.retanguloCard:hover .txtCard {
+    color: #0b3954;
+}
+
+.tituloCard {
+    color: white;
+    margin: 50px 0 0 50px;
+}
+
+.txtCard {
+    color: white;
+    margin: 10px 5px -10px 30px;
+}
+
+.white {
+    color: white;
+    justify-content: center;
+}
+
+
+
+.formBox {
+    width: auto;
+    height: auto;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.formBoxBox {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputLogin {
+    width: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 0;
+    /* min-height: 100vh;*/
+}
+
+.footer {
+    background-color: #0b3954;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    animation: opacity 1s linear;
+
+}
+
+/*END FOOTER SOCIAL DESIGN*/
+.single_footer {}
+
+@media only screen and (max-width:768px) {
+    .single_footer {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+.single_footer h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.single_footer h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.single_footer p {
+    color: #fff;
+}
+
+.single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.single_footer ul li {}
+
+.single_footer ul li a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.single_footer ul li a:hover {
+    color: black;
+}
+
+.single_footer_address {}
+
+.single_footer_address ul {}
+
+.single_footer_address ul li {
+    color: #fff;
+}
+
+.single_footer_address ul li span {
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+
+.contact_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/*START NEWSLETTER CSS*/
+.subscribe {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.subscribe__input {
+    background-color: #fff;
+    border: medium none;
+    border-radius: 5px;
+    color: #333;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    height: 60px;
+    letter-spacing: 0.4px;
+    margin: 0;
+    padding: 0 150px 0 20px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+    .subscribe__input {
+        padding: 0 50px 0 20px;
+    }
+}
+
+.subscribe__btn {
+    background-color: transparent;
+    border-radius: 0 25px 25px 0;
+    color: #01c7e9;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+}
+
+.subscribe__btn i {
+    transition: all 0.3s ease 0s;
+}
+
+@media only screen and (max-width:768px) {
+    .subscribe__btn {
+        right: 0px;
+    }
+}
+
+.subscribe__btn:hover i {
+    color: #ff3666;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+/*END NEWSLETTER CSS*/
+
+/*START SOCIAL PROFILE CSS*/
+.social_profile {
+    margin-top: 40px;
+}
+
+.social_profile ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.social_profile ul li {
+    float: left;
+}
+
+.social_profile ul li a {
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width:768px) {
+    .social_profile ul li a {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .social_profile ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+.social_profile ul li a:hover {
+    background: #ff3666;
+    border: 1px solid #ff3666;
+    color: #fff;
+    border: 0px;
+}
+
+/*END SOCIAL PROFILE CSS*/
+.copyright {
+    margin-top: 70px;
+    padding-top: 40px;
+    color: #fff;
+    font-size: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.copyright a {
+    color: #01c7e9;
+    transition: all 0.2s ease 0s;
+}
+
+.copyright a:hover {
+    color: #ff3666;
+}
+
+input {
+    width: 50%;
+    height: 30px;
+}
+
+input[type='submit'] {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+}
+
+textarea {
+    max-width: 70%;
+    min-width: 70%;
+    max-height: 80px;
+    min-height: 80px;
+}
+
+label {
+    color: white;
+}
+
+.voltar {
+    position: absolute;
+    font-size: 20px;
+}
+
+.containerFOto {
+    display: flex;
+    justify-content: center;
+}
+
+.containerFOto .row {
+    margin-top: 50px;
+}
+
+.rowContato {
+    padding-top: 50px;
+    width: 90%;
+}
+
+.voltar {
+        text-decoration: none;
+        color: white;
+        margin: 5px;
+        font-size: 20px;
+    
+}
+
+
+@keyframes opacity {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .containerForm {
+        padding: 0;
+        margin-left: 30px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    .textarea {
+        width: 80%;
+    }
+
+    .bolaImg {
+        display: none;
+    }
+
+    .bola {
+        display: none;
+    }
+
+    .pt-15 {
+        padding-top: 10px;
+    }
+
+    .pt-10 {
+        padding-top: 0;
+    }
+
+    .descricao {
+        padding: 15px;
+    }
+
+    .box3 {
+        height: auto;
+    }
+
+    .retanguloBox {
+        justify-content: center;
+    }
+
+    .retangulo {
+        margin: 10px;
+    }
+
+    .retanguloCard {
+        height: auto;
+    }
+
+    .triangulo {
+        display: none;
+    }
+
+    .boxTexto1 {
+        padding: 0;
+    }
+}
+
+.btnContato2 {
+    background-color: white;
+    border: 0;
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+    border: 1px solid white;
+    animation: opacity 1s linear;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btnContato2:hover {
+    background-color: #0b3954;
+    color: white;
+    transition: 1s;
+}
