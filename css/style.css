@@ -15,10 +15,19 @@ body {
     height: 100vh; 
     
     
+    
 }
 
 .box3 {
-    background-color: #fffceb;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box5 {
+    background-color: #ECE4CD;
     width: 100%;
     height: auto;
 
@@ -47,6 +56,24 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.box5 {
+    background-image: url("../img/box5.jpg");
+    display: flex;
+    justify-content: center;
+    min-height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.box6 {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
 
 }
 
@@ -61,7 +88,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 100px;
     width: 100%;
-    animation: opacity 1s linear;
+    
 }
 
 .descricao2 {
@@ -81,7 +108,7 @@ body {
 
 .tituloBox1 {
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     animation: opacity 1s linear;
     text-align: center;
 
@@ -89,7 +116,7 @@ body {
 
 .tituloBox2{
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     animation: opacity 1s linear;
 
 }
@@ -193,6 +220,7 @@ form {
     height: 500px;
     animation: opacity 1s linear;
     border: 5px solid white;
+    min-height: 450px;
 }
 
 
@@ -205,8 +233,9 @@ form {
 
 .btnContato {
     background-color: white;
+    width: 100px;
+    height: 50px;
     border: 0;
-    padding: 10px 3px 10px 3px;
     border: 1px solid white;
     animation: opacity 1s linear;
     font-weight: bold;
@@ -214,6 +243,26 @@ form {
     text-decoration: none;
     border-radius: 10px;
 }
+
+.btnFacaparte{
+    background-color: white;
+    width: 250px;
+    height: 50px;
+    border: 0;
+    border: 1px solid white;
+    animation: opacity 1s linear;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btnFacaparte:hover {
+    background-color: #0b3954;
+    color: white;
+    transition: 1s;
+}
+
 
 .btnContato:hover {
     background-color: #0b3954;
@@ -253,7 +302,7 @@ iframe {
 }
 
 .retangulo {
-    height: 50vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,16 +310,16 @@ iframe {
 }
 
 .retanguloCard {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 25px;
     background-color: #0b3954;
-    width: 20rem;
-    height: 15rem;
     padding-bottom: 5rem;
     cursor: pointer;
     animation: opacity 1s linear;
-
+    clip-path: none;
 }
+
+
 
 .retanguloCard:hover {
     background-color: white;
@@ -295,6 +344,7 @@ iframe {
 .txtCard {
     color: white;
     margin: 10px 5px -10px 30px;
+
 }
 
 .white {
@@ -302,12 +352,16 @@ iframe {
     justify-content: center;
 }
 
-
+#li{
+    margin-bottom: 2px;
+}
 
 .formBox {
     width: auto;
     height: auto;
     background-color: black;
+    border: 1px solid white;
+    box-shadow: 0.1em 0.1em 1em black;
     border-radius: 20px;
 }
 
@@ -331,6 +385,21 @@ h4,
 h5,
 h6 {}
 */
+#h2missao{
+    border-top: 8px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 1px 0px 4px 10px;
+    margin: 0px 0px 15px 0px;
+}
+
+#h2visao{
+  
+    border-bottom: 8px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 4px 10px 4px 10px;
+    margin: 0px 15px 0px 15px;
+}
+
 
 @font-face {
     font-family: Blanka;
@@ -412,12 +481,27 @@ section {
 
 .box {
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Estilos para a div em resoluções menores que 678px */
   @media screen and (max-width: 768px) {
     .box {
       display: none;
+    }
+
+    .retanguloCard {
+        border: 2px solid black;
+        border-radius: 25px;
+        background-color: #0b3954;
+        width: 20rem;
+        min-height: 20rem;
+        padding-bottom: 5rem;
+        cursor: pointer;
+        animation: opacity 1s linear;
+    
     }
   }
 
@@ -622,14 +706,6 @@ input {
     height: 30px;
 }
 
-input[type='submit'] {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25%;
-}
-
 textarea {
     max-width: 70%;
     min-width: 70%;
@@ -644,6 +720,10 @@ label {
 .voltar {
     position: absolute;
     font-size: 20px;
+}
+
+.voltar:hover {
+    color: gray;
 }
 
 .containerFOto {
@@ -685,6 +765,7 @@ label {
     }
 
 }
+
 
 @media (max-width: 700px) {
 
@@ -743,6 +824,7 @@ label {
 
     .retanguloCard {
         height: auto;
+        width: 99%;
     }
 
     .triangulo {
@@ -760,14 +842,16 @@ label {
 .btnContato2 {
     background-color: white;
     border: 0;
-    padding: 10px 15px 10px 15px;
-    width: 100%;
+    width: 50%;
     border: 1px solid white;
     animation: opacity 1s linear;
     font-weight: bold;
     color: black;
     text-decoration: none;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btnContato2:hover {
@@ -859,3 +943,179 @@ label {
     fill: #c13584;
   }
   
+  .card {
+  width: 17em;
+  height: 22.5em;
+  background: #171717;
+  transition: 1s ease-in-out;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.card .info {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 1em;
+}
+
+.card .img {
+  width: 4.8em;
+  height: 4.8em;
+  background: white;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.card .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card a {
+  color: white;
+  transition: .4s ease-in-out;
+}
+
+.card a:hover {
+  color: red;
+}
+
+.card button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: .4s ease-in-out;
+}
+
+.card button:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.cardBox {
+    clip-path: none;
+}
+
+
+
+
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+
+
+.cardProfissional {
+    width: 17em;
+    height: 22.5em;
+    background: #171717;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .cardProfissional span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  .cardProfissional .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+
+  }
+  
+  .cardProfissional .img {
+    width: 8.7em;
+    height: 8.7em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+  }
+  
+  .cardProfissional .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .cardProfissional a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+  .cardProfissional a:hover {
+    color: red;
+  }
+  
+  .cardProfissional button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+  }
+  
+  .cardProfissional button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
+
+  @media (max-width: 576px) {
+    .boxEquipe {
+        flex-direction: column;
+    }
+
+    .boxClientes {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgCliente {
+        display: none;
+    }
+  }
+
+    

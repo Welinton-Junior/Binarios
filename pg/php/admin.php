@@ -39,40 +39,41 @@ if (!$resultado) {
 
     <div class="container">
 
-    <div class="body2">
+        <div class="body2">
 
-        <a href="../../index.html">Voltar</a>
+            <a href="../../index.html">Voltar</a>
 
-        <h1 class="text-center">Lista de Contatos</h1>
+            <h1 class="text-center">Lista de Contatos</h1>
 
-        <div class="tabelaBox"  style="max-height: 70%; overflow-y: auto;">
+            <div class="tabelaBox" style="max-height: 70%; overflow-y: auto;">
 
-            <table class="tabela mt-5" border="1">
-                <tr class="tr">
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
-                    <th>Assunto</th>
-                </tr>
+                <table class="tabela mt-5" border="1">
+                    <tr class="tr">
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Assunto</th>
+                    </tr>
+                    <?php
+                    while ($row = mysqli_fetch_assoc($resultado)) {
+
+                        echo "<tr>";
+                        echo "<td>{$row['idContato']}</td>";
+                        echo "<td>{$row['conNomeCompleto']}</td>";
+                        echo "<td>{$row['conTel']}</td>";
+                        echo "<td>{$row['conEmail']}</td>";
+                        echo "<td>{$row['conAssunto']}</td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </table>
+
                 <?php
-                while ($row = mysqli_fetch_assoc($resultado)) {
-                    echo "<tr>";
-                    echo "<td>{$row['idContato']}</td>";
-                    echo "<td>{$row['conNomeCompleto']}</td>";
-                    echo "<td>{$row['conTel']}</td>";
-                    echo "<td>{$row['conEmail']}</td>";
-                    echo "<td>{$row['conAssunto']}</td>";
-                    echo "</tr>";
-                }
+                mysqli_close($conexao);
                 ?>
-            </table>
-
-            <?php
-            mysqli_close($conexao);
-            ?>
+            </div>
         </div>
-    </div>
     </div>
     <div class="footer bg-dark">
         <div class="container">
